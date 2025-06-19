@@ -7,5 +7,6 @@ requires-python = ">=3.10"
 dependencies = [
     "markdown>=3.8",
     "openai-agents[litellm]>=0.0.17",
+    "pydantic>=2.11.5",
     "pygments>=2.19.1",
 ]

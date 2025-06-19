@@ -54,7 +54,7 @@ tools = [recipe_agent_as_a_tool, render_markdown_to_html_file]
 
 recipe_sprucer_agent = Agent(name="Recipe sprucer", instructions=recipe_sprucer_instructions, tools=tools, model=model)
 
+hungry_user_demand = "I really like chocolate but I need to have a dish that has meat in it"
 
-hungry_user_demand = "I really like chocolate but I need to have a dish that has got rice in it as well"
-
-Runner.run_sync(recipe_sprucer_agent, hungry_user_demand)
+if __name__ == "__main__":
+    Runner.run_sync(recipe_sprucer_agent, hungry_user_demand)

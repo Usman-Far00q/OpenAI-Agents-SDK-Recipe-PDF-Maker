@@ -48,7 +48,7 @@ def render_markdown_to_html_file(md_text: str) -> str:
     output_path = tmp_file.name
 
     # Create the file
-    Path(output_path).write_text(full_html, encoding="utf-8")
+    Path(output_path).write_text(full_html, encoding="utf-8", errors="ignore")
     webbrowser.open(f"file://{output_path}")
     time.sleep(5)
     # Delete the file afterward
