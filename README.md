@@ -74,6 +74,7 @@ This project uses a `.env` file to manage configuration values.
 
    ```bash
    uv run meal_maker_groq_and_agents_sdk.py
+   uv run guardrailed_meal_maker_groq_agents_sdk.py
    ```
 
 > Make sure not to commit sensitive `.env` values to version control.
