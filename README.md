@@ -67,9 +67,13 @@ This project uses a `.env` file to manage configuration values.
 2. Open `.env` in a text editor and update the values as needed:
 
    ```env
-   DEBUG=True
-   DATABASE_URL=postgresql://user:password@localhost:5432/dbname
-   SECRET_KEY=your-secret-key
+   GROQ_API_KEY="you groq api key"
+   ```
+
+3. To run the code use the commad below:
+
+   ```bash
+   uv run meal_maker_groq_and_agents_sdk.py
    ```
 
 > Make sure not to commit sensitive `.env` values to version control.
